@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  pb:
+    build:
+      context: .
+    ports:
+      - 8090:8090
+    volumes:
+      - ./pb_data:/app/pb_data
+      - ./pb_migrations:/app/pb_migrations
